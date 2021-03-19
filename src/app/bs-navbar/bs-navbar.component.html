@@ -22,8 +22,9 @@
           <a class="nav-link" routerLink="shopping-cart">Shopping-cart</a>
         </li>
 
-        <li class="nav-item dropdown">
+        <li ngbDropdown class="nav-item dropdown">
           <a
+            ngbDropdownToggle
             class="nav-link dropdown-toggle"
             href="#"
             id="dropdown01"
@@ -31,10 +32,20 @@
             aria-expanded="false"
             >Dropdown</a
           >
-          <ul class="dropdown-menu" aria-labelledby="dropdown01">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          <ul
+            ngbDropdownMenu
+            class="dropdown-menu"
+            aria-labelledby="dropdown01"
+          >
+            <li ngbDropdownItem>
+              <a class="dropdown-item" href="#">Action</a>
+            </li>
+            <li ngbDropdownItem>
+              <a class="dropdown-item" href="#">Another action</a>
+            </li>
+            <li ngbDropdownItem>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </li>
           </ul>
         </li>
       </ul>
